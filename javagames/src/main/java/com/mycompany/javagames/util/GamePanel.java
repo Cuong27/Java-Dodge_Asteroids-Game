@@ -18,8 +18,8 @@ import com.mycompany.javagames.entity.Player;
 
 public class GamePanel extends JPanel implements Runnable {
     // Game 2D co kich thuoc cac tile la 16 * 16
-    final int originalTileSize = 16;    
-    final int scale = 3;
+    final int originalTileSize =32;    
+    final int scale = 2;
     // do 16*16 rat nho so voi do phan giai man hinh hien tai
     // can scale kich thuoc tile len 48*48
     public final int tileSize = originalTileSize * scale;
@@ -83,7 +83,7 @@ public class GamePanel extends JPanel implements Runnable {
                 delta--;
             }
             if(timer>=1_000_000_000){
-                System.out.println("FPS: "+drawCount);
+                //System.out.println("FPS: "+drawCount);
                 drawCount=0;
                 timer=0;
             }     

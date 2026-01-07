@@ -31,5 +31,7 @@ public class Javagames {
         
         gamepanel.requestFocusInWindow(); // 👈 VERY IMPORTANT
         gamepanel.initGameThread();
+        
+        System.out.println(System.getProperty("user.dir"));
     }
 }
